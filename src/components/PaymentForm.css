@@ -1,0 +1,66 @@
+.payment-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.form-title {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.custom-card-input {
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.pay-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 91, 187, 0.3);
+}
+
+.pay-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
