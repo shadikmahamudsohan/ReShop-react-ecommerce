@@ -1,8 +1,8 @@
-import React, { useContext, useRef } from "react";
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import React from "react";
+import { Navigate, useLocation } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
-import auth from "../../firebase.init";
+import auth from "../firebase.init";
 
 const RequireAuth = ({ children }) => {
   let location = useLocation();

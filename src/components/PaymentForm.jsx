@@ -5,9 +5,6 @@ import {
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
-import "./PaymentForm.css";
-import { toast } from "react-toastify";
-import { init, send } from "emailjs-com";
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 import emailjs from "emailjs-com";
@@ -23,14 +20,6 @@ const PaymentForm = ({ productId, price, product }) => {
   const homePageUrl = `${window.location.origin}/`; // Assuming home page is the root
 
   const formData = {
-    // order_id: productId,
-    // to_name: user?.name,
-    // from_name: "ReShop",
-    // product_name: product?.name,
-    // product_price: product?.price,
-    // product_status: "processing",
-    // user_email: "pixelgamedevs@gmail.com",
-
     to_name: user?.name, // Example name
     reply_to: "pixelgamedevs@gmail.com  ", // Example email
     message: "Thank you for buying our product",

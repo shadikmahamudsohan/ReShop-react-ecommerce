@@ -19,10 +19,10 @@ export const ContactUs = () => {
 
     emailjs
       .send(
-        "service_52pzts8", // Your EmailJS service ID
-        "template_ci5wakp", // Your EmailJS template ID
+        process.env.REACT_APP_serviceID, // Your EmailJS service ID
+        process.env.REACT_APP_templateID, // Your EmailJS template ID
         formData, // Pass the data object directly
-        "0eKoB3IdMy7pPubVL" // Your EmailJS user ID
+        process.env.REACT_APP_userID // Your EmailJS user ID
       )
       .then(
         (result) => {

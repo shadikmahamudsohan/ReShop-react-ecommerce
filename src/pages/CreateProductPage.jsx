@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./CreateProductPage.css";
 import { toast } from "react-toastify";
 import imageCompression from "browser-image-compression";
 
@@ -66,10 +65,10 @@ const CreateProductPage = () => {
   };
 
   return (
-    <div className="create-product-page">
+    <div className="">
       <h2>Create Product</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -80,7 +79,7 @@ const CreateProductPage = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="">
           <label htmlFor="description">Description:</label>
           <textarea
             id="description"
@@ -90,7 +89,7 @@ const CreateProductPage = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="">
           <label htmlFor="price">Price:</label>
           <input
             type="number"
@@ -101,9 +100,9 @@ const CreateProductPage = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="">
           <label htmlFor="image">Image:</label>
-          <div className="custom-file-upload">
+          <div className="">
             <input
               type="file"
               id="image"
@@ -112,7 +111,6 @@ const CreateProductPage = () => {
               onChange={handleImageChange}
               required
             />
-            {/* Display selected image or placeholder */}
           </div>
         </div>
         <button type="submit">Create Product</button>

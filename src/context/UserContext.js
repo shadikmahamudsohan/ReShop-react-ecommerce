@@ -17,11 +17,8 @@ export const UserProvider = ({ children }) => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
-
           if (data?.status === "Success") {
             setUserData(data.data);
-            // console.log("user data", data);
           } else {
             setUserData(null);
           }

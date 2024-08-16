@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import UseGet from "../../../hooks/UseGet";
-import "./AllUser.css";
-import UseUpdate from "../../../hooks/UserUpdate";
+import UseGet from "../hooks/UseGet";
+import UseUpdate from "../hooks/UserUpdate";
 
 const AllUser = () => {
   const [userData, setUserData] = useState([]);
@@ -27,8 +26,8 @@ const AllUser = () => {
     });
   }
   return (
-    <div className="table-container">
-      <table className="user-table">
+    <div className="">
+      <table className="">
         <thead>
           <tr>
             <th>Name</th>
@@ -44,10 +43,7 @@ const AllUser = () => {
               <td>{user?.email}</td>
               <td>{user?.role}</td>
               <td>
-                <button
-                  className="action-button"
-                  onClick={() => HandleRoleSwitch(user)}
-                >
+                <button className="" onClick={() => HandleRoleSwitch(user)}>
                   Change Role
                 </button>
               </td>

@@ -1,3 +1,21 @@
+# env data
+
+### REACT_APP_apiKey="AIzaSyC8ncd0T9OKKmwTHfnYKl68ObVEDlhI-yM"
+
+### REACT_APP_authDomain="simple-react-ecommerce-5a7f5.firebaseapp.com"
+
+### REACT_APP_projectId="simple-react-ecommerce-5a7f5",
+
+### REACT_APP_storageBucket="simple-react-ecommerce-5a7f5.appspot.com"
+
+### REACT_APP_messagingSenderId="647213948442"
+
+### REACT_APP_appId="1:647213948442:web:816498febed919b7f87ba3"
+
+### REACT_APP_measurementId= "G-T1JVP13B75"
+
+### REACT_APP_serverApi="http://localhost:8080/"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

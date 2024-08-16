@@ -1,11 +1,11 @@
-import Header from "./components/globalComponents/Header/Header";
+import Navbar from "./components/globalComponents/Header";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header />
+      <Navbar />
       <main>{children}</main>
       <ToastContainer />
     </div>

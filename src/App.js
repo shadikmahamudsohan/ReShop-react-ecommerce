@@ -1,20 +1,18 @@
-import "./App.css";
-
 import Layout from "./layout";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginPage/LoginPage";
-import RegisterPage from "./pages/RegisterPage/Register";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/Register";
 import NotFound from "./pages/NotFound";
 import { UserProvider } from "./context/UserContext";
-import ShopPage from "./pages/ShopPage/ShopPage";
-import CreateProductPage from "./pages/CreateProductPage/CreateProductPage";
-import ProductPage from "./pages/ProductPage/ProductPage";
-import PaymentPage from "./pages/PaymentPage/PaymentPage";
+import ShopPage from "./pages/ShopPage";
+import CreateProductPage from "./pages/CreateProductPage";
+import ProductPage from "./pages/ProductPage";
+import PaymentPage from "./pages/PaymentPage";
 import { ContactUs } from "./pages/ContactUs";
-import Verify from "./pages/Verify/Verify";
-import RequireAuth from "./components/Required/RequireAuth";
-import AllUser from "./pages/Dashboard/AllUser/AllUser";
+import Verify from "./pages/Verify";
+import RequireAuth from "./components/RequireAuth";
+import AllUser from "./pages/AllUser";
 
 function App() {
   return (

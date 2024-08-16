@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import PaymentForm from "../../components/PaymentForm";
+import PaymentForm from "../components/PaymentForm";
 import { useParams } from "react-router-dom";
-import UseGet from "../../hooks/UseGet";
+import UseGet from "../hooks/UseGet";
 
 const stripePromise = loadStripe(
   "pk_test_51L0erJFO4ypSR6bZcP2M1BZv8IdBPQHsUwLBgg7G5B06fU7bwGlqtdgWEXDQTrRJMmYFNVCBNt1G79Yk7GlVSSUa00BaitXEwA"

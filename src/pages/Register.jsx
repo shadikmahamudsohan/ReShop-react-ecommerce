@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./Register.css";
 
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import auth from "../firebase.init";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useSendEmailVerification } from "react-firebase-hooks/auth";

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./LoginPage.css";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import auth from "../firebase.init";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -16,6 +15,7 @@ const LoginPage = () => {
   const [sendPasswordResetEmail, sending, error2] =
     useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
+
   useEffect(() => {
     if (user) {
       fetch(`${process.env.REACT_APP_serverApi}user?email=${email}`)
@@ -29,6 +29,7 @@ const LoginPage = () => {
         });
     }
   }, [user]);
+
   const handleUsernameChange = (e) => {
     setEmail(e.target.value);
   };
@@ -55,12 +56,13 @@ const LoginPage = () => {
         });
     }
   };
+
   return (
-    <section className="login-section">
-      <div className="login-form-container">
-        <form onSubmit={handleSubmit} className="login-form">
+    <section className="">
+      <div className="">
+        <form onSubmit={handleSubmit} className="">
           <h2>Login</h2>
-          <div className="form-group">
+          <div className="">
             <label htmlFor="username">Email</label>
             <input
               type="email"
@@ -70,7 +72,7 @@ const LoginPage = () => {
               required
             />
           </div>
-          <div className="form-group">
+          <div className="">
             <label htmlFor="password">Password</label>
             <input
               type="password"
@@ -80,13 +82,13 @@ const LoginPage = () => {
               required
             />
           </div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="">
             Login
           </button>
           <br />
           <Link to="/register">Create a new account</Link>
           <br />
-          <p onClick={handleResetPassword} className="forget-password">
+          <p onClick={handleResetPassword} className="">
             Forgot password?
           </p>
         </form>
