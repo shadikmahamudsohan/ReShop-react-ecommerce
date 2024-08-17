@@ -6,6 +6,7 @@ export const UserProvider = ({ children }) => {
   const [userData, setUserData] = useState(null);
   const [user, loading, error] = useAuthState(auth);
   const token = localStorage.getItem("token");
+  console.log(userData);
 
   useEffect(() => {
     if (!loading && !error && user && token !== "undefined") {

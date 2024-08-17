@@ -10,12 +10,10 @@ const ShopPage = () => {
   }, []);
 
   return (
-    <div className="">
-      <div className="">
-        {products.map((product) => (
-          <SingleProduct key={product._id} data={product} />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
+      {products.map((product) => (
+        <SingleProduct key={product._id} data={product} />
+      ))}
     </div>
   );
 };

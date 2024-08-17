@@ -16,7 +16,7 @@ import AllUser from "./pages/AllUser";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-gray-100 dark:bg-gray-950 dark:text-white animate-fade-in">
       <UserProvider>
         <Layout>
           <Routes>
